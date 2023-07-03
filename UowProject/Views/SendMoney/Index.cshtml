@@ -1,0 +1,33 @@
+﻿@model UowProject.Models.CustomerViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div class="container">
+        <form method="post">
+            <br />
+            <label>Gönderen ID</label>
+            <input type="text" class="form-control" asp-for="SenderID" />
+            <br />
+            <label>Alıcı ID</label>
+            <input type="text" class="form-control" asp-for="ReceiverID" />
+            <br />
+            <label>Miktar</label>
+            <input type="text" class="form-control" asp-for="Amount" />
+            <br />
+            <button class="btn btn-dark">Parayı Gönder</button>
+        </form>
+    </div>
+
+</body>
+</html>
